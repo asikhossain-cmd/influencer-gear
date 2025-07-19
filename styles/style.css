@@ -27,6 +27,7 @@
     font-family: var(--font-family-common1);
     font-weight: 700;
     font-size: calc(24 / 16 * 1rem);
+    /* font-size: 100%; */
 }
 .header-menu ul li {
     list-style: none;
@@ -43,6 +44,36 @@
 .header-menu ul {
     display: flex;
     align-items: center;
-    gap: 2.125rem;
+    gap: 34px;
 }
 /* Navbar Design End*/
+/* Banner Section  Design Start */
+.banner-section {
+    width: 100%;
+    margin: 50px 125px;
+}
+/* Banner Section  Design End */
+
+
+
+
+/* Responsive Section Start */
+@media screen and (max-width: 480px) {
+    .navbar-section {
+        flex-direction: column;
+        /* align-items: center; */
+        margin: 49px auto;
+        justify-content: center;
+    }
+    .navbar-section h3 {
+        font-size: 100%;
+    }
+    .header-menu ul {
+        gap: 24px;
+        flex-wrap: wrap;
+        margin: 10px 10px;
+        justify-content: center;
+        row-gap: 1px;
+    }
+}
+/* Responsive Section End */
