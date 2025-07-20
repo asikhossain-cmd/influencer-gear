@@ -51,15 +51,12 @@
     max-width: 1200px;
     height: 415px;
     margin: 50px auto ;
+    position: relative;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 130px;
-    /* justify-items: center; */
     align-items: center;
-}
-.banner-column1 {
-    height: auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 69px;
 }
 .banner-column2 img {
     max-width: 100%;
@@ -67,10 +64,36 @@
     display: inline;
     top: 0;
     right: 0;
-    /* height: auto; */
 }
 .banner-column2 {
-    position: relative;
+    /* position: relative; */
+}
+.banner-column1 h1 {
+    font-family: var(--font-family-common1);
+    font-size: calc(52 / 16 * 1rem);
+    font-weight: 600;
+}
+.banner-column1 p {
+    font-family: var(--font-family-common1);
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3A3A3A;
+    margin-top: 16px;
+}
+.banner-column1 button {
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 41px;
+    color: white;
+    font-family: var(--font-family-common1);
+    font-weight: 700;
+    font-size: 1rem;
+    margin-top: 16px;
+    cursor: pointer;
+}
+.banner-column1 button i {
+    margin-left: 12px;
 }
 /* Banner Section  Design End */
 
@@ -78,6 +101,8 @@
 
 
 /* Responsive Section Start */
+
+/* Navbar Responsive Codes */
 @media screen and (max-width: 480px) {
     .navbar-section {
         flex-direction: column;
@@ -96,4 +121,14 @@
         row-gap: 1px;
     }
 }
+/* Navbar Responsive Codes */
+
+/* Banner Responsive Codes */
+
+@media screen and (max-width: 480px) {
+    
+}
+
+/* Banner Responsive Codes */
+
 /* Responsive Section End */
