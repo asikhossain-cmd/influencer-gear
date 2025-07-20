@@ -16,12 +16,11 @@
     color: black;
 }
 .navbar-section {
-    max-width: 100%;
+    max-width: 1200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 auto;
-    margin: 49px 120px;
+    margin: 49px auto;
 }
 .navbar-section h3 {
     font-family: var(--font-family-common1);
@@ -49,8 +48,29 @@
 /* Navbar Design End*/
 /* Banner Section  Design Start */
 .banner-section {
-    width: 100%;
-    margin: 50px 125px;
+    max-width: 1200px;
+    height: 415px;
+    margin: 50px auto ;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 130px;
+    /* justify-items: center; */
+    align-items: center;
+}
+.banner-column1 {
+    height: auto;
+}
+.banner-column2 img {
+    max-width: 100%;
+    position: absolute;
+    display: inline;
+    top: 0;
+    right: 0;
+    /* height: auto; */
+}
+.banner-column2 {
+    position: relative;
 }
 /* Banner Section  Design End */
 
