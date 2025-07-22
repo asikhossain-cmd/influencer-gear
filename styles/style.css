@@ -1,8 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
+
 /* Common Styles*/
 :root {
     --font-family-common1: 'poppins', sans-serif;
@@ -49,7 +50,7 @@
 /* Banner Section  Design Start */
 .banner-section {
     max-width: 1200px;
-    height: 415px;
+    height: 475px;
     margin: 50px auto ;
     position: relative;
     box-sizing: border-box;
@@ -58,15 +59,11 @@
     grid-template-columns: 1fr 1fr;
     gap: 69px;
 }
-.banner-column2 img {
-    max-width: 100%;
+
+.image-01 {
     position: absolute;
-    display: inline;
-    top: 0;
-    right: 0;
-}
-.banner-column2 {
-    /* position: relative; */
+    z-index: -1;
+    top: 5px;
 }
 .banner-column1 h1 {
     font-family: var(--font-family-common1);
@@ -97,13 +94,21 @@
 }
 /* Banner Section  Design End */
 
-
+/* Banner-Sponsor-Design-Start */
+.sponsor-card {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 3.75rem;
+    margin: 7.325rem auto;
+}
+/* Banner-Sponsor-Design-End */
 
 
 /* Responsive Section Start */
 
 /* Navbar Responsive Codes */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
     .navbar-section {
         flex-direction: column;
         /* align-items: center; */
@@ -125,7 +130,39 @@
 
 /* Banner Responsive Codes */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
+    .banner-column2 img {
+        position: static;
+        display: block;
+    } 
+    .banner-section {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    .banner-section h1, .banner-section p {
+        text-align: center;
+        margin: auto;
+    }
+    .banner-section h1 {
+        font-size: 1.75rem;
+        width: 404px;
+    }
+    .banner-section p {
+        width: 324px;
+        font-size: 0.875rem;
+    }
+    .banner-section button {
+        display: block;
+        margin: 20px auto;
+    }
+    
+
+    /* responsive sponsors list */
+    .sponsor-card {
+        grid-template-columns: repeat(4, 1fr);
+        width: 100%;
+    }
+
     
 }
 
