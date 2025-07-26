@@ -8,6 +8,7 @@
 :root {
     --font-family-common1: 'poppins', sans-serif;
     --font-family-common2: 'Inter', sans-serif;
+    --font-family-rare: 'Roboto', sans-serif;
     --primary-color: #E02C6D;
     --btn-color: white;
 }
@@ -116,6 +117,7 @@
 .product-card {
     max-width: 1150px;
     margin: 0 auto;
+    position: relative;
 }
 .product-card h2 {
     text-align: center;
@@ -138,6 +140,7 @@
     text-align: left;
     padding: 15px;
     box-shadow: 0 4px 80px 10px rgba(0,0,0,0.1); 
+    border-radius: 5px;
 }
 .product h3 {
     font-family: var(--font-family-common1);
@@ -160,6 +163,40 @@
 }
 .product img {
     width: 100%;
+    border-radius: 5px;
+}
+.rating-section {
+    margin-top: 10px;
+    font-family: var(--font-family-rare);
+    font-size: calc(14 / 16 * 1rem);
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.6);
+}
+.product p {
+    font-family: var(--font-family-common2);
+    font-size: calc(14 / 16 * 1rem);
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 143%;
+}
+.product-card button {
+    position: absolute;
+    bottom: -5%;
+    right: 0%;
+    transform: translateX(-0px);
+    border: none;
+    background: none;
+    font-family: var(--font-family-common1);
+    color: #E02C6D;
+    font-size: calc(16 / 16 * 1rem);
+    font-weight: 700;
+    cursor: pointer;
+}
+.product-card button:hover {
+    text-decoration: underline;
+}
+.product-card button i {
+    margin-left: 8px;
 }
 
 /* Main Body Product Cards Design End*/
