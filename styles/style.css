@@ -151,6 +151,7 @@
     font-size: calc(24 / 16 * 1rem);
     color: rgba(0, 0, 0, 0.8);
     font-weight: 500;
+    margin-top: 6px;
 }
 .product i {
     color: #FB8200;
